@@ -2,7 +2,7 @@ Index: u-boot-2025.10/configs/nanopi_neo_defconfig
 ===================================================================
 --- u-boot-2025.10.orig/configs/nanopi_neo_defconfig
 +++ u-boot-2025.10/configs/nanopi_neo_defconfig
-@@ -9,4 +9,20 @@ CONFIG_CONSOLE_MUX=y
+@@ -9,4 +9,21 @@ CONFIG_CONSOLE_MUX=y
  CONFIG_SUN8I_EMAC=y
  CONFIG_USB_EHCI_HCD=y
  CONFIG_USB_OHCI_HCD=y
