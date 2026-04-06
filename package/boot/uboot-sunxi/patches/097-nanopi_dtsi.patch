@@ -1,0 +1,24 @@
+Index: u-boot-2025.10/arch/arm/dts/sun8i-h3-nanopi.dtsi
+===================================================================
+--- u-boot-2025.10.orig/arch/arm/dts/sun8i-h3-nanopi.dtsi
++++ u-boot-2025.10/arch/arm/dts/sun8i-h3-nanopi.dtsi
+@@ -61,16 +61,11 @@
+ 		compatible = "gpio-leds";
+ 
+ 		led-0 {
+-			label = "nanopi:blue:status";
+-			gpios = <&pio 0 10 GPIO_ACTIVE_HIGH>;
+-			linux,default-trigger = "heartbeat";
+-		};
+-
+-		led-1 {
+-			label = "nanopi:green:pwr";
+-			gpios = <&r_pio 0 10 GPIO_ACTIVE_HIGH>;
++			label = "nanopi:blue:pwr";
++			gpios = <&pio 0 10 GPIO_ACTIVE_LOW>;
+ 			default-state = "on";
+ 		};
++
+ 	};
+ 
+ 	gpio-keys {
