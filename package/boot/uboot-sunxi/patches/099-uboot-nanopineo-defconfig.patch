@@ -1,0 +1,28 @@
+Index: u-boot-2025.10/configs/nanopi_neo_defconfig
+===================================================================
+--- u-boot-2025.10.orig/configs/nanopi_neo_defconfig
++++ u-boot-2025.10/configs/nanopi_neo_defconfig
+@@ -14,5 +14,23 @@ CONFIG_CONSOLE_MUX=y
+ CONFIG_SUN8I_EMAC=y
+ CONFIG_USB_EHCI_HCD=y
+ CONFIG_USB_OHCI_HCD=y
++#
++# RAM
++#
++CONFIG_SUNXI_DRAM_LPDDR3=y
++CONFIG_SUNXI_DRAM_LPDDR3_STOCK=y
++#
++# Autoboot options
++#
++CONFIG_AUTOBOOT=y
++CONFIG_BOOTDELAY=10
++CONFIG_AUTOBOOT_KEYED=y
++CONFIG_AUTOBOOT_FLUSH_STDIN=y
++CONFIG_AUTOBOOT_PROMPT="Autoboot in %d seconds\n"
++# CONFIG_AUTOBOOT_ENCRYPTION is not set
++CONFIG_AUTOBOOT_DELAY_STR="d"
++CONFIG_AUTOBOOT_STOP_STR="s"
++CONFIG_AUTOBOOT_KEYED_CTRLC=y
++# CONFIG_BOOT_RETRY is not set
+ 
+ 

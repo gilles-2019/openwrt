@@ -1,0 +1,27 @@
+Index: u-boot-2025.10/arch/arm/dts/sun8i-h3-nanopi-neo.dts
+===================================================================
+--- u-boot-2025.10.orig/arch/arm/dts/sun8i-h3-nanopi-neo.dts
++++ u-boot-2025.10/arch/arm/dts/sun8i-h3-nanopi-neo.dts
+@@ -51,6 +51,15 @@
+ 	};
+ };
+ 
++&leds {
++
++	led-1 {
++		label = "nanopi:green:pwr";
++		gpios = <&r_pio 0 10 GPIO_ACTIVE_LOW>;
++		default-state = "on";
++	};
++};
++
+ &ehci0 {
+ 	status = "okay";
+ };
+@@ -72,5 +81,5 @@
+ };
+ 
+ &usbphy {
+-	usb0_id_det-gpios = <&pio 6 12 GPIO_ACTIVE_HIGH>; /* PG12 */
++	usb0_id_det-gpios = <&pio 0 7 GPIO_ACTIVE_HIGH>; /* for mxq PA07 */
+ };

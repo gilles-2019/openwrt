@@ -1,0 +1,6 @@
+CONFIG_TARGET_sunxi=y
+CONFIG_TARGET_sunxi_cortexa7=y
+CONFIG_TARGET_sunxi_cortexa7_DEVICE_friendlyarm_nanopi-neo=y
+CONFIG_DEVEL=y
+# CONFIG_FEED_telephony is not set
+# CONFIG_TARGET_ROOTFS_SQUASHFS is not set
